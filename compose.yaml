@@ -15,10 +15,8 @@ services:
       - .env
   ollama:
     image: ollama/ollama:0.3.6
-    #    expose:
-    #      - "11434"
-    ports:
-      - "11434:11434"
+    expose:
+      - "11434"
     tty: true
     restart: always
     volumes:
